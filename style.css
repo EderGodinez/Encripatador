@@ -1,0 +1,214 @@
+*{
+    background:#868E96;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y: hidden;   
+}
+h1{
+    color:#495057 ;
+    text-align: center;
+}
+.AreaUsuario{
+width:50%;
+}
+.AreaResultado{
+    width:50%;
+}
+.logo{
+    display: inline-block;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-left: 10px;
+    width:120px;
+    height: 75px;
+}
+
+main{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+
+.AreaTexto {
+    resize: none;
+    height: 600px;
+    width:98%;
+    border: none;
+    color: #495057;
+    margin-top: 30px;
+    padding: 2px;
+    text-transform: lowercase;
+}
+::placeholder { color: #495057; }
+  .AreaTexto:focus {
+      outline: none;
+    }
+
+.Resultado{
+    height: 750px;
+    width: 35%;
+    background: white;
+    background-image: url("/imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #495057;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.Resultado:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+}
+
+.btn-desencriptar {
+    background: #CED4DA;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background-color: #343A40;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.Copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 220px;
+    margin-top: 695px;
+    position: absolute;
+    width: 336px;
+}
+
+.informacion {
+    display: inline;
+    color: #495057;
+    font-size:18px;
+}
+
+/*MEDIA QUERRY DE TABLET*/
+@media screen and (max-width:750px){
+    *{
+        font-size: 20px;  
+    }
+    header{
+        display: block;
+    }
+    main{
+        display: block;
+        margin-left: 80px;
+    }
+    .AreaUsuario{
+        width:100%;
+        display: block;
+        }
+        .AreaTexto {
+            height: 200px;
+            width:90%;
+            border: none;
+            color: #495057;
+            margin-top: 30px;
+            padding: 2px;
+            text-transform: lowercase;
+        }
+        .AreaResultado{
+            width:100%;
+        }
+        
+        .Resultado{
+            height:200px;
+            background-image: url("/imagenes/ningun-mensaje.png");
+            width: 80%;
+            margin-left: 0px;
+            margin-top: 50px;
+            padding-left: 20px;
+        }
+        .Copiar {
+            background-color: aliceblue;
+            height: 40px;
+            margin-left: 120px;
+            margin-top: 300px;
+            width: 300px;
+        }
+      
+}
+/*MEDIA QUERRY DE CELULAR*/
+@media screen  and (max-width:480px){
+    *{
+        font-size: 15px;  
+    }
+    .btn-desencriptar {
+        margin-top: 10px;
+        height: 30px;
+        margin-left: 15px;
+        width: 300px;
+    }
+    
+    .btn-encriptar {
+        margin-left: 15px;
+        height: 30px;
+        width: 300px;
+    }
+    .Copiar {
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        cursor: pointer;
+        height: 30px;
+        margin:0px;
+        margin-top: 170px;
+        position: absolute;
+        width: 336px;
+    }
+    main{
+        display: block;
+        margin-left: 10px;
+    }
+    .botones{
+        display: block;
+    }
+    .AreaUsuario{
+        width:100%;
+        display: table;
+        }
+        .AreaTexto {
+            height: 200px;
+            width:90%;
+            margin-top: 10px;
+            padding: 2px;
+        }
+        .AreaResultado{
+            width:100%;
+            display: block;
+        }
+        
+        .Resultado{
+            height: 140px;
+            background-image: url("/imagenes/ningun-mensaje-xs.png");
+            padding: 0px;
+            width: 350px;
+            margin-top: 20px;
+        }
+}
